@@ -72,6 +72,13 @@ flutter:
         - asset: assets/fonts/OpenSans-SemiboldItalic.ttf
           weight: 600
           style: italic
+
+    - family: NotoSans
+      fonts:
+        - asset: assets/fonts/NotoSansCJKkr-Black.ttf
+          weight: 300
+
+
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

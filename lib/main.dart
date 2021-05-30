@@ -32,6 +32,10 @@ import 'package:flutter_chart/scrolling_chart/many_bar_chart.dart';
 import 'package:flutter_chart/scrolling_chart/multiple.dart';
 import 'package:flutter_chart/scrolling_chart/tall_bar.dart';
 import 'package:flutter_chart/scrolling_chart/view_pager.dart';
+import 'package:flutter_chart/test/weekly_combined_chart.dart';
+import 'package:flutter_chart/test/monthly_combined_chart.dart';
+import 'package:flutter_chart/test/combined_test.dart';
+import 'package:flutter_chart/test/cubic_line.dart';
 import 'package:mp_chart/mp/core/utils/color_utils.dart';
 
 //import 'demo/even_more/realtime.dart';
@@ -93,6 +97,10 @@ class MyApp extends StatelessWidget {
         '/even_more_line_chart/dynamic': (_) => EvenMoreDynamic(),
         '/even_more_line_chart/realtime': (_) => EvenMoreRealtime(),
         '/even_more_line_chart/hourly': (_) => EvenMoreHourly(),
+        CubicLineChart.routeName: (_) => CubicLineChart(),
+        CombinedTest.routeName: (_) => CombinedTest(),
+        WeeklyCombinedChart.routeName: (_) => WeeklyCombinedChart(),
+        MonthlyCombinedChart.routeName: (_) => MonthlyCombinedChart(),
       },
     );
   }
@@ -124,14 +132,14 @@ class _MyHomePageState extends State<MyHomePage> {
             padding: EdgeInsets.only(top: 15.0),
             child: Center(
                 child: Text(
-                  text,
-                  textDirection: TextDirection.ltr,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                      color: ColorUtils.BLACK,
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold),
-                ))));
+              text,
+              textDirection: TextDirection.ltr,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  color: ColorUtils.BLACK,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold),
+            ))));
   }
 
   void _itemClick(String action) {
@@ -181,14 +189,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           padding: EdgeInsets.all(15.0),
                           child: Center(
                               child: Text(
-                                "Line Charts",
-                                textDirection: TextDirection.ltr,
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                    color: ColorUtils.BLACK,
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold),
-                              ))),
+                            "Line Charts",
+                            textDirection: TextDirection.ltr,
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: ColorUtils.BLACK,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold),
+                          ))),
                       Gaps.line
                     ],
                   ),
@@ -483,14 +491,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           padding: EdgeInsets.all(15.0),
                           child: Center(
                               child: Text(
-                                "Bar Charts",
-                                textDirection: TextDirection.ltr,
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                    color: ColorUtils.BLACK,
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold),
-                              ))),
+                            "Bar Charts",
+                            textDirection: TextDirection.ltr,
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: ColorUtils.BLACK,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold),
+                          ))),
                       Gaps.line
                     ],
                   ),
@@ -785,14 +793,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           padding: EdgeInsets.all(15.0),
                           child: Center(
                               child: Text(
-                                "Pie Charts",
-                                textDirection: TextDirection.ltr,
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                    color: ColorUtils.BLACK,
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold),
-                              ))),
+                            "Pie Charts",
+                            textDirection: TextDirection.ltr,
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: ColorUtils.BLACK,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold),
+                          ))),
                       Gaps.line
                     ],
                   ),
@@ -912,14 +920,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           padding: EdgeInsets.all(15.0),
                           child: Center(
                               child: Text(
-                                "Other Charts",
-                                textDirection: TextDirection.ltr,
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                    color: ColorUtils.BLACK,
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold),
-                              ))),
+                            "Other Charts",
+                            textDirection: TextDirection.ltr,
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: ColorUtils.BLACK,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold),
+                          ))),
                       Gaps.line
                     ],
                   ),
@@ -1109,14 +1117,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           padding: EdgeInsets.all(15.0),
                           child: Center(
                               child: Text(
-                                "Scrolling Charts",
-                                textDirection: TextDirection.ltr,
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                    color: ColorUtils.BLACK,
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold),
-                              ))),
+                            "Scrolling Charts",
+                            textDirection: TextDirection.ltr,
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: ColorUtils.BLACK,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold),
+                          ))),
                       Gaps.line
                     ],
                   ),
@@ -1271,14 +1279,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           padding: EdgeInsets.all(15.0),
                           child: Center(
                               child: Text(
-                                "Even More Line Charts",
-                                textDirection: TextDirection.ltr,
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                    color: ColorUtils.BLACK,
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold),
-                              ))),
+                            "Even More Line Charts",
+                            textDirection: TextDirection.ltr,
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: ColorUtils.BLACK,
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold),
+                          ))),
                       Gaps.line
                     ],
                   ),
@@ -1388,6 +1396,198 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                     )),
+                Container(
+                  padding: EdgeInsets.symmetric(horizontal: 15.0),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        padding: EdgeInsets.all(15.0),
+                        child: Text(
+                          'My Test Charts',
+                          textDirection: TextDirection.ltr,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              color: ColorUtils.BLACK,
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      Gaps.line
+                    ],
+                  ),
+                ),
+                InkWell(
+                  onTap: () =>
+                      Navigator.of(context).pushNamed(CubicLineChart.routeName),
+                  child: Container(
+                      padding: EdgeInsets.symmetric(horizontal: 15.0),
+                      child: Container(
+                          padding: EdgeInsets.only(top: 10),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Custom Cubic Line",
+                                textDirection: TextDirection.ltr,
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              Container(
+                                padding: EdgeInsets.only(top: 10, bottom: 15),
+                                child: Text(
+                                  "My custom cubic line chart",
+                                  textDirection: TextDirection.ltr,
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                      color: ColorUtils.BLACK, fontSize: 12),
+                                )
+                              ),
+                              Gaps.line,
+                            ],
+                          ))),
+                ),
+                InkWell(
+                  onTap: () =>
+                      Navigator.of(context).pushNamed(WeeklyCombinedChart.routeName),
+                  child: Container(
+                      padding: EdgeInsets.symmetric(horizontal: 15.0),
+                      child: Container(
+                          padding: EdgeInsets.only(top: 10),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Custom Bar Line Combined",
+                                textDirection: TextDirection.ltr,
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              Container(
+                                  padding: EdgeInsets.only(top: 10, bottom: 15),
+                                  child: Text(
+                                    "My custom bar line combined chart",
+                                    textDirection: TextDirection.ltr,
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                        color: ColorUtils.BLACK, fontSize: 12),
+                                  )
+                              ),
+                              Gaps.line,
+                            ],
+                          ))),
+                ),
+                InkWell(
+                  onTap: () =>
+                      Navigator.of(context).pushNamed(CombinedTest.routeName),
+                  child: Container(
+                      padding: EdgeInsets.symmetric(horizontal: 15.0),
+                      child: Container(
+                          padding: EdgeInsets.only(top: 10),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Combined Test",
+                                textDirection: TextDirection.ltr,
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              Container(
+                                  padding: EdgeInsets.only(top: 10, bottom: 15),
+                                  child: Text(
+                                    "Combined Test",
+                                    textDirection: TextDirection.ltr,
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                        color: ColorUtils.BLACK, fontSize: 12),
+                                  )
+                              ),
+                              Gaps.line,
+                            ],
+                          ))),
+                ),
+                InkWell(
+                  onTap: () =>
+                      Navigator.of(context).pushNamed(MonthlyCombinedChart.routeName),
+                  child: Container(
+                      padding: EdgeInsets.symmetric(horizontal: 15.0),
+                      child: Container(
+                          padding: EdgeInsets.only(top: 10),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Monthly Combined",
+                                textDirection: TextDirection.ltr,
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              Container(
+                                  padding: EdgeInsets.only(top: 10, bottom: 15),
+                                  child: Text(
+                                    "Combined Test",
+                                    textDirection: TextDirection.ltr,
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                        color: ColorUtils.BLACK, fontSize: 12),
+                                  )
+                              ),
+                              Gaps.line,
+                            ],
+                          ))),
+                ),
+                InkWell(
+                  onTap: () =>
+                      Navigator.of(context).pushNamed(WeeklyCombinedChart.routeName),
+                  child: Container(
+                      padding: EdgeInsets.symmetric(horizontal: 15.0),
+                      child: Container(
+                          padding: EdgeInsets.only(top: 10),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.max,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Weekly Combined",
+                                textDirection: TextDirection.ltr,
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              Container(
+                                  padding: EdgeInsets.only(top: 10, bottom: 15),
+                                  child: Text(
+                                    "Combined Test",
+                                    textDirection: TextDirection.ltr,
+                                    textAlign: TextAlign.center,
+                                    style: TextStyle(
+                                        color: ColorUtils.BLACK, fontSize: 12),
+                                  )
+                              ),
+                              Gaps.line,
+                            ],
+                          ))),
+                ),
               ],
             ),
           ),

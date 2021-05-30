@@ -42,4 +42,8 @@ abstract class Util {
   // ignore: non_constant_identifier_names
   static TypeFace EXTRA_BOLD =
   TypeFace(fontFamily: "OpenSans", fontWeight: FontWeight.w800);
+
+  static TypeFace NOTO_LIGHT =
+      TypeFace(fontFamily: "NotoSans", fontWeight: FontWeight.w300);
+
 }
